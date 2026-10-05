@@ -544,3 +544,15 @@ footer{padding-left:clamp(20px,2.2vw,40px);padding-right:clamp(20px,2.2vw,40px)}
   .aera-wordmark{font-size:22vw}
   .aera-topline,.aera-bottomline{font-size:8px}
 }
+
+
+/* CUT VERSION — tighter premium flow */
+.work{padding-bottom:104px}
+.services{padding-bottom:104px}
+.contact{
+  border-top:1px solid rgba(244,241,234,.14);
+  min-height:72vh;
+}
+@media(max-width:560px){
+  .work,.services,.contact{padding-top:72px;padding-bottom:72px}
+}
