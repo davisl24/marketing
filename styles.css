@@ -427,3 +427,43 @@ a{color:inherit;text-decoration:none}
 .nav-cta{
   color:#fff;
 }
+
+
+/* HERO + STATS V4 — monochrome lock candidate */
+.nav-cta,
+.hero-bottom .primary-button{
+  background:#111!important;
+  color:#fff!important;
+}
+.nav-cta:hover,
+.hero-bottom .primary-button:hover{
+  background:#2a2a2a!important;
+}
+
+.hero{
+  background:
+    radial-gradient(circle at 78% 18%, rgba(0,0,0,.045), transparent 24%),
+    radial-gradient(circle at 18% 78%, rgba(0,0,0,.03), transparent 22%),
+    var(--bg);
+}
+
+.stats-band{
+  background:#111!important;
+  color:#fff;
+}
+.stats-visual{
+  background:
+    radial-gradient(circle at 26% 46%, rgba(255,255,255,.16), transparent 20%),
+    radial-gradient(circle at 68% 58%, rgba(255,255,255,.08), transparent 24%),
+    linear-gradient(90deg,#080808 0%,#1d1d1d 32%,#0b0b0b 58%,#2a2a2a 100%)!important;
+}
+.stats-glow{
+  filter:blur(34px);
+  opacity:.22;
+}
+.stats-glow-left{
+  background:#fff!important;
+}
+.stats-glow-right{
+  background:#8a8a8a!important;
+}
