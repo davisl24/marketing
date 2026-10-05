@@ -140,3 +140,35 @@
   .case-result{margin-top:8px}
   .case-link{justify-self:start}
 }
+
+
+/* SERVICES — minimal editorial list */
+.services{padding-top:96px;padding-bottom:96px}
+.services .section-head{margin-bottom:40px}
+.services .section-head h2{max-width:760px}
+.services .service-list{border-top:1px solid rgba(255,255,255,.26)}
+.services .service-row{
+  grid-template-columns:48px minmax(0,1.15fr) minmax(260px,.85fr);
+  gap:24px;
+  padding:24px 0;
+  align-items:baseline;
+}
+.services .service-row h3{
+  font-size:clamp(34px,3.6vw,56px);
+  line-height:.98;
+}
+.services .service-row p{
+  max-width:420px;
+  font-size:13px;
+  line-height:1.45;
+}
+@media(max-width:920px){
+  .services{padding-top:72px;padding-bottom:72px}
+  .services .service-row{grid-template-columns:36px 1fr}
+  .services .service-row p{grid-column:2}
+}
+@media(max-width:560px){
+  .services{padding-top:64px;padding-bottom:64px}
+  .services .service-row{padding:20px 0}
+  .services .service-row h3{font-size:34px}
+}
