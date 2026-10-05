@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Mārketinga aģentūras demo." />
-  <title>North — Izaugsmes un radošā aģentūra</title>
+  <meta name="description" content="Mārketinga aģentūras demo" />
+  <title>North — Mārketinga aģentūra</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -12,181 +12,140 @@
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="#top">NORTH<span>®</span></a>
-    <nav class="desktop-nav">
-      <a href="#work">Darbi</a>
-      <a href="#services">Pakalpojumi</a>
-    </nav>
-    <a class="nav-cta" href="#contact">Pieteikt sarunu <span>↗</span></a>
+    <div class="nav-shell">
+      <a class="brand" href="#top">NORTH<sup>®</sup></a>
+      <nav class="desktop-nav" aria-label="Galvenā navigācija">
+        <a href="#work">Darbi</a>
+        <a href="#services">Pakalpojumi</a>
+      </nav>
+      <a class="nav-cta" href="#contact">Pieteikt sarunu <span>↗</span></a>
+    </div>
   </header>
 
   <main id="top">
-    <section class="hero section">
+    <section class="hero shell">
       <div class="hero-copy">
-        <p class="eyebrow hero-intro">Stratēģija · Radošums · Rezultāti</p>
-
-        <h1 class="hero-title" aria-label="Izaugsme, ko var redzēt">
-          <span class="hero-line"><span>Izaugsme, ko</span></span>
-          <span class="hero-line hero-line-accent"><span>var redzēt</span></span>
+        <p class="eyebrow reveal">STRATĒĢIJA · RADOŠUMS · REZULTĀTI</p>
+        <h1 class="hero-title">
+          <span class="mask"><span>Izaugsme, ko</span></span>
+          <span class="mask italic"><span>var redzēt</span></span>
         </h1>
-
-        <p class="hero-text hero-intro">Stratēģija, radošums un performance mārketings, kas pārvērš uzmanību pieprasījumā.</p>
-
-        <div class="hero-actions hero-intro">
-          <a class="primary-cta" href="#contact">Pieteikt stratēģijas sarunu <span>↗</span></a>
-          <a class="secondary-cta" href="#work">Skatīt darbus <span>↓</span></a>
+        <p class="hero-text reveal">Stratēģija, radošums un performance mārketings, kas pārvērš uzmanību pieprasījumā</p>
+        <div class="hero-actions reveal">
+          <a class="button button-dark" href="#contact">Pieteikt stratēģijas sarunu <span>↗</span></a>
+          <a class="text-link" href="#work">Skatīt darbus <span>↓</span></a>
         </div>
       </div>
 
-      <div class="hero-proof hero-intro">
-        <p class="proof-label">Rezultāti</p>
-        <div class="proof-stat"><strong>+127%</strong><span>kvalificēts pieprasījums</span></div>
-        <div class="proof-stat"><strong>3.8×</strong><span>atdeve no reklāmas</span></div>
-        <div class="proof-stat"><strong>42M</strong><span>kampaņu skatījumi</span></div>
-        <p class="placeholder-note">Demo dati</p>
+      <aside class="metrics reveal" aria-label="Rezultāti">
+        <div class="metrics-head">REZULTĀTI</div>
+        <div class="metric"><strong data-value="127" data-prefix="+" data-suffix="%">+127%</strong><span>kvalificēts pieprasījums</span></div>
+        <div class="metric"><strong data-value="3.8" data-decimals="1" data-suffix="×">3.8×</strong><span>atdeve no reklāmas</span></div>
+        <div class="metric"><strong data-value="42" data-suffix="M">42M</strong><span>kampaņu skatījumi</span></div>
+      </aside>
+    </section>
+
+    <section class="trust shell reveal">
+      <div class="trust-head">
+        <span>IZVĒLĒTIE KLIENTI</span>
+        <span>Darbs, kas runā pats par sevi</span>
+      </div>
+      <div class="logos">
+        <span>ARC</span><span>FOLD</span><span>MONO</span><span>NOVA</span><span>KITE</span>
       </div>
     </section>
 
-    <section class="client-strip" aria-label="Izvēlētie klienti">
-      <div class="client-strip-head">
-        <p>Izvēlētie klienti</p>
-        <span>Darbs, ko varam parādīt</span>
-      </div>
-      <div class="logo-row">
-        <span class="client-logo reveal">ARC</span>
-        <span class="client-logo reveal">FOLD</span>
-        <span class="client-logo reveal">MONO</span>
-        <span class="client-logo reveal">NOVA</span>
-        <span class="client-logo reveal">KITE</span>
-        <span class="client-logo reveal">STUDIO18</span>
-      </div>
-    </section>
-
-    <section class="work section" id="work">
-      <div class="section-head work-head">
-        <p class="eyebrow">Darbi</p>
+    <section class="work shell" id="work">
+      <div class="section-heading reveal">
+        <p class="eyebrow">DARBI</p>
         <h2>Rezultāti praksē</h2>
       </div>
 
-      <article class="case case-feature case-aera reveal">
-        <div class="case-visual visual-aera">
-          <div class="aera-topline">
-            <span>AERA / 2026</span>
-            <span>Zīmola starts</span>
-          </div>
-
-          <div class="aera-stage">
-            <div class="aera-brand-panel">
-              <div class="aera-monogram">A</div>
-              <div class="aera-wordmark">AERA</div>
+      <article class="project project-feature reveal">
+        <div class="project-media aera-media">
+          <div class="aera-toolbar"><span>AERA / 2026</span><span>Brand system</span></div>
+          <div class="aera-layout">
+            <div class="aera-main">
+              <span class="micro">01 / BRAND</span>
+              <div class="aera-logo">AERA</div>
               <p>Move with intent</p>
             </div>
-
-            <div class="aera-campaign aera-campaign-left">
-              <span>01</span>
-              <strong>MOVE</strong>
-              <small>Campaign system</small>
+            <div class="aera-side">
+              <span class="micro">CAMPAIGN</span>
+              <strong>MOVE<br>WITH INTENT</strong>
+              <div class="aera-rule"></div>
+              <small>Strategy · Identity · Launch</small>
             </div>
-
-            <div class="aera-campaign aera-campaign-right">
-              <span>02</span>
-              <strong>WITH<br>INTENT</strong>
-              <small>Launch creative</small>
-            </div>
-
-            <div class="aera-site-preview">
-              <div class="site-bar"><span>AERA</span><span>Menu</span></div>
-              <div class="site-copy">Designed for<br><em>forward motion</em></div>
-              <div class="site-line"></div>
-            </div>
-          </div>
-
-          <div class="aera-bottomline">
-            <span>Pozicionējums · Kampaņa · Digitālais virziens</span>
-            <span>Demo case study</span>
           </div>
         </div>
-
-        <div class="case-meta">
-          <div class="case-name"><span>01</span><h3>AERA</h3></div>
+        <div class="project-meta">
+          <div><span>01</span><h3>AERA</h3></div>
           <p>Pozicionējums + kampaņa</p>
-          <div class="case-result"><strong>+127%</strong><span>kvalificēts pieprasījums</span></div>
-          <a href="#contact" class="case-link">Skatīt projektu <span>↗</span></a>
+          <div class="project-result"><strong>+127%</strong><span>kvalificēts pieprasījums</span></div>
+          <a href="#contact">Skatīt projektu ↗</a>
         </div>
       </article>
 
-      <div class="case-grid">
-        <article class="case reveal">
-          <div class="case-visual visual-two">
-            <div class="visual-type">ROOM</div>
-            <span class="media-note">Vieta reālam projekta foto / video</span>
+      <div class="project-grid">
+        <article class="project reveal">
+          <div class="project-media room-media">
+            <span class="micro">ROOM / CAMPAIGN</span>
+            <div class="room-word">ROOM</div>
+            <p>Make space for better ideas</p>
           </div>
-          <div class="case-meta compact">
-            <div class="case-name"><span>02</span><h3>ROOM</h3></div>
-            <p>Radošā kampaņa</p>
-            <div class="case-result"><strong>3.8×</strong><span>ROAS</span></div>
+          <div class="project-meta small">
+            <div><span>02</span><h3>ROOM</h3></div>
+            <div class="project-result"><strong>3.8×</strong><span>ROAS</span></div>
           </div>
         </article>
 
-        <article class="case reveal">
-          <div class="case-visual visual-three">
-            <div class="visual-type visual-type-light">VANTA</div>
-            <span class="media-note light-note">Vieta reālam projekta foto / video</span>
+        <article class="project reveal">
+          <div class="project-media vanta-media">
+            <span class="micro">VANTA / PERFORMANCE</span>
+            <div class="vanta-screen">
+              <div class="vanta-top"><span>Growth dashboard</span><span>Q4</span></div>
+              <strong>+64%</strong>
+              <div class="vanta-line"></div>
+              <small>Conversion uplift</small>
+            </div>
           </div>
-          <div class="case-meta compact">
-            <div class="case-name"><span>03</span><h3>VANTA</h3></div>
-            <p>Performance mārketings</p>
-            <div class="case-result"><strong>+64%</strong><span>konversija</span></div>
+          <div class="project-meta small">
+            <div><span>03</span><h3>VANTA</h3></div>
+            <div class="project-result"><strong>+64%</strong><span>konversija</span></div>
           </div>
         </article>
       </div>
     </section>
 
-    <section class="services section" id="services">
-      <div class="section-head light">
-        <p class="eyebrow">Pakalpojumi</p>
-        <h2>No idejas līdz rezultātam</h2>
-      </div>
-
-      <div class="service-list">
-        <div class="service-row reveal">
-          <span>01</span>
-          <h3>Stratēģija</h3>
-          <p>Pozicionējums, auditorija un skaidrs vēstījums</p>
+    <section class="services-wrap" id="services">
+      <div class="services shell">
+        <div class="section-heading light reveal">
+          <p class="eyebrow">PAKALPOJUMI</p>
+          <h2>No idejas līdz rezultātam</h2>
         </div>
-
-        <div class="service-row reveal">
-          <span>02</span>
-          <h3>Radošais saturs</h3>
-          <p>Kampaņu idejas, saturs un vizuālais virziens</p>
-        </div>
-
-        <div class="service-row reveal">
-          <span>03</span>
-          <h3>Performance</h3>
-          <p>Maksas reklāma, testēšana un optimizācija</p>
-        </div>
-
-        <div class="service-row reveal">
-          <span>04</span>
-          <h3>Web</h3>
-          <p>Landing lapas un mājaslapas ar skaidru nākamo soli</p>
+        <div class="service-list">
+          <div class="service-row reveal"><span>01</span><h3>Stratēģija</h3><p>Pozicionējums, auditorija un skaidrs vēstījums</p></div>
+          <div class="service-row reveal"><span>02</span><h3>Radošais saturs</h3><p>Kampaņu idejas, saturs un vizuālais virziens</p></div>
+          <div class="service-row reveal"><span>03</span><h3>Performance</h3><p>Maksas reklāma, testēšana un optimizācija</p></div>
+          <div class="service-row reveal"><span>04</span><h3>Web</h3><p>Landing lapas un mājaslapas ar skaidru nākamo soli</p></div>
         </div>
       </div>
     </section>
 
-    <section class="contact section" id="contact">
-      <p class="eyebrow">Gatavi augt?</p>
-      <h2 class="contact-title reveal">Parādiet mums šķērsli<br><span>Mēs atradīsim virzienu</span></h2>
-      <div class="contact-bottom reveal">
-        <a class="primary-cta inverted" href="mailto:hello@example.com">Pieteikt stratēģijas sarunu <span>↗</span></a>
-        <p>hello@example.com<br>Rīga · Eiropa</p>
+    <section class="contact-shell shell" id="contact">
+      <div class="contact-card reveal">
+        <p class="eyebrow">GATAVI AUGT?</p>
+        <h2>Parādiet mums šķērsli<br><em>Mēs atradīsim virzienu</em></h2>
+        <div class="contact-bottom">
+          <a class="button button-light" href="mailto:hello@example.com">Pieteikt stratēģijas sarunu <span>↗</span></a>
+          <p>hello@example.com<br>Rīga · Eiropa</p>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer>
-    <a class="brand" href="#top">NORTH<span>®</span></a>
+  <footer class="footer shell">
+    <a class="brand" href="#top">NORTH<sup>®</sup></a>
     <span>Izaugsmes un radošā aģentūra</span>
     <span>© 2026</span>
   </footer>
