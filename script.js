@@ -38,28 +38,17 @@ function alignMSocialsHero(){
 
   if(!title||!line2||!line3||!anchor1||!anchor2) return;
 
-  line2.style.left="";
-  line3.style.left="";
   line2.style.marginLeft="";
   line3.style.marginLeft="";
 
-  if(window.innerWidth<=620){
-    line2.style.marginLeft="14vw";
-    line3.style.marginLeft="24vw";
-    return;
-  }
-
-  if(window.innerWidth<=980){
-    line2.style.marginLeft="18vw";
-    requestAnimationFrame(()=>{
-      const titleRect=title.getBoundingClientRect();
-      const anchor2Rect=anchor2.getBoundingClientRect();
-      line3.style.marginLeft=`${Math.max(0,anchor2Rect.left-titleRect.left)}px`;
-    });
-    return;
-  }
-
   const titleRect=title.getBoundingClientRect();
+
+  if(window.innerWidth<=620){
+    line2.style.marginLeft="13vw";
+    line3.style.marginLeft="25vw";
+    return;
+  }
+
   const anchor1Rect=anchor1.getBoundingClientRect();
   line2.style.marginLeft=`${Math.max(0,anchor1Rect.left-titleRect.left)}px`;
 
