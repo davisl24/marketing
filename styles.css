@@ -603,15 +603,22 @@ a{color:inherit;text-decoration:none}
   display:block;
   width:max-content;
   max-width:100%;
-  font-size:clamp(88px,11.2vw,190px);
+  font-size:clamp(84px,10.6vw,180px);
   line-height:.84;
+}
+.ms-line-1{
   color:#0b0b0b;
 }
-.ms-hero-title-accent{
+.ms-line-2{
+  margin-left:clamp(150px,16vw,290px);
+  margin-top:18px;
+  color:#0b0b0b;
+}
+.ms-line-3{
   margin-left:auto;
   margin-right:clamp(40px,5vw,88px);
-  margin-top:24px;
-  font-size:clamp(102px,12vw,206px)!important;
+  margin-top:18px;
+  font-size:clamp(102px,11.8vw,202px)!important;
   background:linear-gradient(
     90deg,
     #080808 0%,
@@ -659,12 +666,16 @@ a{color:inherit;text-decoration:none}
   .ms-hero-top{padding:0 6px;margin-bottom:26px}
   .ms-hero-top p,.ms-hero-top span{font-size:8px}
   .ms-hero-copy{padding:0 4px}
-  .ms-hero-title>span{font-size:16.2vw;line-height:.86}
-  .ms-hero-title-accent{
+  .ms-hero-title>span{font-size:15.8vw;line-height:.86}
+  .ms-line-2{
+    margin-left:10vw;
+    margin-top:14px;
+  }
+  .ms-line-3{
     margin-left:auto;
     margin-right:4vw;
-    margin-top:16px;
-    font-size:17.4vw!important;
+    margin-top:14px;
+    font-size:17.2vw!important;
   }
   .ms-hero-bottom{
     margin-left:7vw;
@@ -685,11 +696,15 @@ a{color:inherit;text-decoration:none}
   .ms-hero-top p{max-width:190px;line-height:1.35}
   .ms-hero-title{line-height:1}
   .ms-hero-title>span{font-size:16.2vw;line-height:.88}
-  .ms-hero-title-accent{
-    margin-left:auto;
+  .ms-line-2{
+    margin-left:8vw;
+    margin-top:12px;
+  }
+  .ms-line-3{
+    margin-left:14vw;
     margin-right:0;
-    margin-top:14px;
-    font-size:18.4vw!important;
+    margin-top:12px;
+    font-size:18vw!important;
   }
   .ms-hero-bottom{
     margin-left:0;
