@@ -183,25 +183,22 @@ a{color:inherit;text-decoration:none}
 .nav-cta:hover{background:#292929}
 
 .hero{
-  padding:88px 0 72px;
+  padding:72px 0 62px;
   overflow:hidden;
-  background:
-    radial-gradient(circle at 78% 18%,rgba(0,0,0,.035),transparent 24%),
-    radial-gradient(circle at 18% 82%,rgba(0,0,0,.02),transparent 22%),
-    var(--bg);
+  background:var(--bg);
 }
 .hero-copy{
   padding:0 28px;
 }
 .hero-kicker{
-  margin:0 0 28px;
+  margin:0 0 22px;
   font-family:"Inter",sans-serif;
   font-size:9px;
   line-height:1;
   font-weight:500;
   letter-spacing:.16em;
   color:#111;
-  opacity:.6;
+  opacity:.58;
 }
 .hero-title{
   position:relative;
@@ -210,11 +207,21 @@ a{color:inherit;text-decoration:none}
   max-width:100%;
   margin:0;
   font-family:"Archivo","Inter",sans-serif;
-  font-size:clamp(108px,14.5vw,240px);
+  font-size:clamp(118px,16.2vw,272px);
   line-height:.78;
-  letter-spacing:-.065em;
+  letter-spacing:-.078em;
   font-weight:700;
-  color:#0d0d0d;
+  background:linear-gradient(
+    90deg,
+    #050505 0%,
+    #1d1d1d 18%,
+    #f2f2f2 46%,
+    #2e2e2e 72%,
+    #050505 100%
+  );
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;
 }
 .hero-title::after{
   content:attr(data-shadow);
@@ -224,27 +231,29 @@ a{color:inherit;text-decoration:none}
   transform:translate(10px,12px) scale(1.01);
   background:linear-gradient(
     90deg,
-    rgba(0,0,0,.52) 0%,
-    rgba(70,70,70,.28) 48%,
-    rgba(0,0,0,.42) 100%
+    rgba(0,0,0,.42) 0%,
+    rgba(120,120,120,.22) 42%,
+    rgba(255,255,255,.16) 52%,
+    rgba(90,90,90,.24) 68%,
+    rgba(0,0,0,.36) 100%
   );
   -webkit-background-clip:text;
   background-clip:text;
   color:transparent;
-  filter:blur(18px);
-  opacity:.85;
+  filter:blur(16px);
+  opacity:.9;
   pointer-events:none;
 }
 .hero-bottom{
   display:grid;
-  grid-template-columns:minmax(0,480px) auto;
+  grid-template-columns:minmax(0,520px) auto;
   align-items:center;
-  gap:28px;
-  margin-top:34px;
+  gap:26px;
+  margin-top:24px;
 }
 .hero-bottom p{
   margin:0;
-  max-width:480px;
+  max-width:500px;
   font-family:"Inter",sans-serif;
   font-size:15px;
   line-height:1.48;
@@ -271,29 +280,36 @@ a{color:inherit;text-decoration:none}
   .brand{font-size:29px}
   .desktop-nav{display:none}
   .nav-shell{grid-template-columns:1fr auto}
-  .hero{padding:64px 0 54px}
-  .hero-copy{padding:0 4px}
+  .hero{
+    padding:56px 0 48px;
+  }
+  .hero-copy{
+    padding:0 4px;
+  }
   .hero-kicker{
     font-size:8px;
-    margin-bottom:22px;
+    margin-bottom:20px;
   }
   .hero-title{
-    font-size:18.8vw;
+    font-size:18.6vw;
+    line-height:.8;
   }
   .hero-title::after{
     transform:translate(8px,10px) scale(1.01);
-    filter:blur(14px);
+    filter:blur(13px);
   }
   .hero-bottom{
     grid-template-columns:1fr;
     gap:18px;
-    margin-top:26px;
+    margin-top:22px;
   }
 }
 @media(max-width:620px){
   .brand{font-size:25px}
   .nav-cta{padding:11px 14px;font-size:12px}
-  .hero{padding:48px 0 42px}
+  .hero{
+    padding:44px 0 38px;
+  }
   .hero-kicker{
     font-size:7px;
     letter-spacing:.11em;
@@ -302,14 +318,15 @@ a{color:inherit;text-decoration:none}
   .hero-title{
     font-size:18vw;
     line-height:.82;
+    letter-spacing:-.072em;
   }
   .hero-title::after{
     transform:translate(6px,8px);
-    filter:blur(10px);
-    opacity:.72;
+    filter:blur(9px);
+    opacity:.78;
   }
   .hero-bottom{
-    margin-top:22px;
+    margin-top:18px;
   }
   .hero-bottom p{
     font-size:14px;
@@ -535,16 +552,18 @@ a{color:inherit;text-decoration:none}
   }
 }
 
-
 /* HERO LOCK GUARD */
 @media(max-width:1200px) and (min-width:981px){
-  .hero-title{font-size:14.5vw}
+  .hero-title{font-size:16vw}
+  .hero{padding:68px 0 58px}
 }
 @media(max-width:980px){
-  .hero-title{font-size:18.8vw}
-  .hero{padding:64px 0 54px}
+  .hero-title{font-size:18.6vw;line-height:.8}
+  .hero{padding:56px 0 48px}
+  .hero-bottom{margin-top:22px}
 }
 @media(max-width:620px){
-  .hero-title{font-size:18vw;line-height:.82}
-  .hero{padding:48px 0 42px}
+  .hero-title{font-size:18vw;line-height:.82;letter-spacing:-.072em}
+  .hero{padding:44px 0 38px}
+  .hero-bottom{margin-top:18px}
 }
